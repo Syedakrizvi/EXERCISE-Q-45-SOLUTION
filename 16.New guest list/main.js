@@ -1,0 +1,15 @@
+var guest_list = ["sahiba", "kaneez", "noreen", "nousheen", "nazia"];
+var not_present = "nazia";
+var new_guest = "shama anjum";
+guest_list[1] = new_guest;
+for (var i = 0; i < guest_list.length; i++) {
+    console.log("Respected mam " +
+        guest_list[i] +
+        ",\n We invited you on dinner tomorrow.\n\nThank u\n");
+}
+guest_list.unshift("rubab", "kinza", "maira");
+for (var i = 0; i < guest_list.length; i++) {
+    console.log("Respected mam " +
+        guest_list[i] +
+        ",\n We invited you on dinner tomorrow.\n\nThank u\n");
+}
