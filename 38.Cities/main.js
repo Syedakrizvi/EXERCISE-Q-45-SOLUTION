@@ -1,10 +1,14 @@
-function describe_city(city, country) {
-    if (country === void 0) { country = "Default Country."; }
-    console.log("".concat(city, " is in ").concat(country));
+"use strict";
+function describe_city(city, country = "Pakistan") {
+    return (`${city} is in ${country}`);
 }
 ;
 //3 cities
-describe_city("Cape town, South africa");
-describe_city("Dehli, India");
-describe_city("Hyderabad, Pakistan");
-describe_city("UAE");
+let city1 = describe_city("Karachi");
+let city2 = describe_city("Larkana");
+let city3 = describe_city("Hyderabad");
+let city4 = describe_city("Dubai", "UAE");
+console.log(city1);
+console.log(city2);
+console.log(city3);
+console.log(city4);

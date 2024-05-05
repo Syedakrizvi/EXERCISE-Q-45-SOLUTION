@@ -1,11 +1,12 @@
-var magician = ["Harry Porter", "Hermione Granger", "Ron Weasley", "Albus Dumledore"];
+"use strict";
+let magician = ["Harry Porter", "Hermione Granger", "Ron Weasley", "Albus Dumledore"];
 function make_great(magicianArray) {
-    for (var i = 0; i < magicianArray.length; i++) {
+    for (let i = 0; i < magicianArray.length; i++) {
         magician[i] = "The Great " + magicianArray[i];
     }
 }
 function show_magicians(magicians) {
-    magicians.forEach(function (element) {
+    magicians.forEach(element => {
         console.log(element);
     });
 }

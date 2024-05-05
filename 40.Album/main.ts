@@ -17,9 +17,9 @@ function make_album2 (artistName: string, albumTitle: string, numberOfTracks?: n
 
 }
 
-let album4 = make_album("Ali","Dil hai", 30);
-let album5  = make_album("Madad","Roshan Sitara", 25);
-let album6  = make_album("Iqbal", "Dil hai",12 );
+let album4 = make_album2("Ali","Dil hai", 30);
+let album5  = make_album2("Madad","Roshan Sitara", 25);
+let album6  = make_album2("Iqbal", "Dil hai",12 );
 
 console.log(album4);
 console.log(album5);

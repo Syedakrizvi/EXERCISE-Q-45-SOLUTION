@@ -8,6 +8,7 @@ for (let i = 0; i < guest_list.length; i++) {
 }
 let not_present: string = "nazia";
 let new_guest: string = "shama anjum";
+guest_list[4] = new_guest;
 for (let i = 0; i < guest_list.length; i++) {
   console.log(
     "Respected mam " +
@@ -16,3 +17,4 @@ for (let i = 0; i < guest_list.length; i++) {
   );
 }
 console.log(`Ms. ${not_present} will not coming tomorrow dinner. `);
+

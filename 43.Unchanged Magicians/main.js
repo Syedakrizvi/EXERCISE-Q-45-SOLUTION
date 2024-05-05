@@ -1,27 +1,19 @@
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-var magician = ["Harry Porter", "Hermione Granger", "Ron Weasley", "Albus Dumledore"];
+"use strict";
+let magician = ["Harry Porter", "Hermione Granger", "Ron Weasley", "Albus Dumledore"];
 function copyArray(arr) {
-    return __spreadArray([], arr, true);
+    return [...arr];
 }
 function make_great(magicianArray) {
-    for (var i = 0; i < magicianArray.length; i++) {
+    for (let i = 0; i < magicianArray.length; i++) {
         magicianArray[i] = "The Great " + magicianArray[i];
     }
 }
 function show_magicians(magicians) {
-    magicians.forEach(function (element) {
+    magicians.forEach(element => {
         console.log(element);
     });
 }
-var copyMagicianArray = copyArray(magician);
+const copyMagicianArray = copyArray(magician);
 make_great(copyMagicianArray);
 console.log('\n\nThis is my original array:');
 show_magicians(magician);
