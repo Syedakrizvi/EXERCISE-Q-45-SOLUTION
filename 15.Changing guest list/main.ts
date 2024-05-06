@@ -16,5 +16,6 @@ for (let i = 0; i < guest_list.length; i++) {
       ",\n We invited you on dinner tomorrow.\n\nThank u\n"
   );
 }
-console.log(`Ms. ${not_present} will not coming tomorrow dinner. `);
+console.log(`Ms. ${not_present} will not coming tomorrow dinner. `); 
+
 
