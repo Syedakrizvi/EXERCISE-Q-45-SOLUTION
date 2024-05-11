@@ -2,7 +2,7 @@ let guest_list: string[] = ["sahiba", "kaneez", "noreen", "nousheen", "nazia"];
 
 let not_present: string = "nazia";
 let new_guest: string = "shama anjum";
-guest_list[1] = new_guest;
+guest_list[4] = new_guest;
 for (let i = 0; i < guest_list.length; i++) {
   console.log(
     "Respected mam " +
